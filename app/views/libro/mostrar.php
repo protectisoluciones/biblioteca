@@ -16,13 +16,9 @@
             <p><strong>🗣 Idioma:</strong> <?= htmlspecialchars($data['libro']['idioma']) ?></p>
             <p><strong>🏷 Categoría:</strong> <?= htmlspecialchars($data['libro']['categoria']) ?></p>
             <p><strong>📝 Descripción:</strong> <?= nl2br(htmlspecialchars($data['libro']['descripcion'])) ?></p>
-            <p><strong>📚 Disponible:</strong> <?= $data['libro']['disponible'] ? '✔ Sí' : '✖ No' ?></p>
-            <p><strong>📍 Ubicación Física:</strong> <?= htmlspecialchars($data['libro']['ubicacion_fisica']) ?></p>
-            <?php if (!empty($data['libro']['portada_url'])): ?>
-                <p><strong>🖼 Portada:</strong><br>
-                    <img src="<?= htmlspecialchars($data['libro']['portada_url']) ?>" alt="Portada del libro" class="img-thumbnail" style="max-width: 200px;">
-                </p>
-            <?php endif; ?>
+            <p><strong>📚 Disponibilidad:</strong> <?= htmlspecialchars($data['libro']['disponibilidad']) ?></p>
+            <p><strong>📍 Ubicación Física:</strong> <?= htmlspecialchars($data['libro']['ubicacion']) ?></p>
+            <p><strong>💾 Formato:</strong> <?= htmlspecialchars($data['libro']['formato']) ?></p>
         </div>
         <div class="card-footer text-end">
             <a href="/libros" class="btn btn-secondary">↩️ Volver al Catálogo</a>

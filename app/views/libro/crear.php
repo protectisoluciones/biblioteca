@@ -18,64 +18,76 @@
 
         <div class="mb-3">
             <label for="isbn_10" class="form-label">ISBN-10</label>
-            <input type="text" name="isbn_10" id="isbn_10" class="form-control"required>
+            <input type="text" name="isbn_10" id="isbn_10" class="form-control" required>
         </div>
 
         <div class="mb-3">
             <label for="isbn_13" class="form-label">ISBN-13</label>
-            <input type="text" name="isbn_13" id="isbn_13" class="form-control"required>
+            <input type="text" name="isbn_13" id="isbn_13" class="form-control" required>
         </div>
 
         <div class="mb-3">
             <label for="editorial" class="form-label">Editorial</label>
-            <input type="text" name="editorial" id="editorial" class="form-control"required>
+            <input type="text" name="editorial" id="editorial" class="form-control" required>
         </div>
 
         <div class="mb-3">
             <label for="edicion" class="form-label">Edición</label>
-            <input type="text" name="edicion" id="edicion" class="form-control"required>
+            <input type="text" name="edicion" id="edicion" class="form-control" required>
         </div>
 
         <div class="mb-3">
             <label for="anio_publicacion" class="form-label">Año de Publicación</label>
-            <input type="number" name="anio_publicacion" id="anio_publicacion" class="form-control" min="1000" max="<?= date('Y') ?>"required>
+            <input type="number" name="anio_publicacion" id="anio_publicacion" class="form-control" min="1000"
+                max="<?= date('Y') ?>" required>
         </div>
 
         <div class="mb-3">
             <label for="numero_paginas" class="form-label">Número de Páginas</label>
-            <input type="number" name="numero_paginas" id="numero_paginas" class="form-control" min="1"required>
+            <input type="number" name="numero_paginas" id="numero_paginas" class="form-control" min="1" required>
         </div>
 
         <div class="mb-3">
             <label for="idioma" class="form-label">Idioma</label>
-            <input type="text" name="idioma" id="idioma" class="form-control"required>
+            <input type="text" name="idioma" id="idioma" class="form-control" required>
         </div>
 
         <div class="mb-3">
             <label for="categoria" class="form-label">Categoría</label>
-            <input type="text" name="categoria" id="categoria" class="form-control"required>
+            <input type="text" name="categoria" id="categoria" class="form-control" required>
         </div>
 
         <div class="mb-3">
             <label for="descripcion" class="form-label">Descripción</label>
-            <textarea name="descripcion" id="descripcion" class="form-control"required rows="3"></textarea>
+            <textarea name="descripcion" id="descripcion" class="form-control" required rows="3"></textarea>
         </div>
 
         <div class="mb-3">
             <label for="portada_url" class="form-label">URL de la Portada</label>
-            <input type="url" name="portada_url" id="portada_url" class="form-control"required>
+            <input type="url" name="portada_url" id="portada_url" class="form-control" required>
         </div>
 
         <div class="mb-3">
-            <label for="ubicacion_fisica" class="form-label">Ubicación Física</label>
-            <input type="text" name="ubicacion_fisica" id="ubicacion_fisica" class="form-control"required>
+            <label for="ubicacion" class="form-label">Ubicación Física</label>
+            <input type="text" name="ubicacion" id="ubicacion" class="form-control" required>
         </div>
 
         <div class="mb-3">
-            <label for="disponible" class="form-label">Disponible</label>
-            <select name="disponible" id="disponible" class="form-select"required>
-                <option value="1" selected>Sí</option>
-                <option value="0">No</option>
+            <label for="disponibilidad" class="form-label">Disponibilidad</label>
+            <select name="disponibilidad" id="disponibilidad" class="form-select" required>
+                <option value="Disponible" selected>Disponible</option>
+                <option value="No disponible">No disponible</option>
+                <option value="Prestado">Prestado</option>
+                <option value="Reservado">Reservado</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="formato" class="form-label">Formato</label>
+            <select name="formato" id="formato" class="form-select" required>
+                <option value="Físico">📘 Físico</option>
+                <option value="eBook">💻 eBook</option>
+                <option value="Audiolibro">🎧 Audiolibro</option>
             </select>
         </div>
 

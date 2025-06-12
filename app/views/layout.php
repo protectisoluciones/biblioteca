@@ -46,7 +46,7 @@
         <ul class="nav nav-pills flex-column mb-auto">
             <li><a href="/usuarios" class="nav-link">👤 Usuario</a></li>
             <li><a href="/libros" class="nav-link">📖 Libro</a></li>
-            <li><a href="/Loan/index" class="nav-link">🔄 Préstamo</a></li>
+            <li><a href="/prestamos" class="nav-link">🔄 Préstamo</a></li>
             <li><a href="/Fine/index" class="nav-link">💸 Multa</a></li>
         </ul>
     </div>

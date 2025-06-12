@@ -14,4 +14,12 @@ return [
     '/libro/crear' => ['controller' => 'LibroController', 'method' => 'create'],
     '/libro/mostrar/{id}' => ['controller' => 'LibroController', 'method' => 'show'],
     '/libro/eliminar/{id}' => ['controller' => 'LibroController', 'method' => 'delete'],
+    '/libro/buscar' => ['controller' => 'LibroController', 'method' => 'search'],
+    // Rutas de préstamos
+    '/prestamos' => ['controller' => 'PrestamoController', 'method' => 'index'],
+    '/prestamo/crear' => ['controller' => 'PrestamoController', 'method' => 'crear'],
+    '/prestamo/renovar/{id}' => ['controller' => 'PrestamoController', 'method' => 'renovar'],
+    '/prestamo/devolver/{id}' => ['controller' => 'PrestamoController', 'method' => 'devolver'],
+    '/prestamo/historial/{idUsuario}' => ['controller' => 'PrestamoController', 'method' => 'historial'],
+    '/prestamo/reservar/{idLibro}' => ['controller' => 'PrestamoController', 'method' => 'reservar'],
 ];
