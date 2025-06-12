@@ -22,4 +22,8 @@ return [
     '/prestamo/devolver/{id}' => ['controller' => 'PrestamoController', 'method' => 'devolver'],
     '/prestamo/historial/{idUsuario}' => ['controller' => 'PrestamoController', 'method' => 'historial'],
     '/prestamo/reservar/{idLibro}' => ['controller' => 'PrestamoController', 'method' => 'reservar'],
+    // Rutas de multas
+    '/multas' => ['controller' => 'MultaController', 'method' => 'index'],
+    '/multa/pagar/{id}' => ['controller' => 'MultaController', 'method' => 'pagar'],
+
 ];

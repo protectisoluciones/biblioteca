@@ -13,6 +13,12 @@ class PrestamoController extends Controller {
      public function crear() {
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $prestamo = new PrestamoEntity($_POST);
+
+            $multaModel = $this->model('MultaModel');
+
+            if ($multaModel->tieneMultasPendientes($prestamo->getUsuarioId())) {
+                die("No puedes realizar préstamos hasta que pagues tus multas.");}
+
             $model = $this->model('PrestamoModel');
             $model->crearPrestamo($prestamo);
             header("Location: /prestamos");

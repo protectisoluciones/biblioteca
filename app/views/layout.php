@@ -47,7 +47,7 @@
             <li><a href="/usuarios" class="nav-link">👤 Usuario</a></li>
             <li><a href="/libros" class="nav-link">📖 Libro</a></li>
             <li><a href="/prestamos" class="nav-link">🔄 Préstamo</a></li>
-            <li><a href="/Fine/index" class="nav-link">💸 Multa</a></li>
+            <li><a href="/multas" class="nav-link">💸 Multa</a></li>
         </ul>
     </div>
     <?php endif; ?>
