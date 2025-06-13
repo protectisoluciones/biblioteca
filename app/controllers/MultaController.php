@@ -4,18 +4,15 @@ class MultaController extends Controller
 {
     public function index()
     {
-        session_start();
-        
+        session_start();    
         $usuarioId = $_SESSION['usuario']['id'] ?? null;
-
         if (!$usuarioId) {
             header("Location: /inicio");
             exit;
         }
-
         $model = $this->model('MultaModel');
         $multas = $model->obtenerMultasUsuario($usuarioId);
-        $this->view('multas/index', ['multas' => $multas]);
+        $this->view('multas/lista', ['multas' => $multas]);
     }
 
     public function pagar($id)

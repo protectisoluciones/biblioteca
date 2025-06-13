@@ -24,6 +24,6 @@ return [
     '/prestamo/reservar/{idLibro}' => ['controller' => 'PrestamoController', 'method' => 'reservar'],
     // Rutas de multas
     '/multas' => ['controller' => 'MultaController', 'method' => 'index'],
-    '/multa/pagar/{id}' => ['controller' => 'MultaController', 'method' => 'pagar'],
+    '/multa/pagar/{id}' => ['controller' => 'MultaController', 'method' => 'pagar']
 
 ];

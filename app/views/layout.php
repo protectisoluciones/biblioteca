@@ -39,22 +39,25 @@
     $esLoginORegistro = in_array($rutaActual, ['', 'registrar']);
 ?>
 
-    <?php if (!$esLoginORegistro): ?>
-    <div class="sidebar d-flex flex-column p-3 text-white">
-        <h4 class="text-center text-white">📚 Biblioteca</h4>
-        <hr>
-        <ul class="nav nav-pills flex-column mb-auto">
-            <li><a href="/usuarios" class="nav-link">👤 Usuario</a></li>
-            <li><a href="/libros" class="nav-link">📖 Libro</a></li>
-            <li><a href="/prestamos" class="nav-link">🔄 Préstamo</a></li>
-            <li><a href="/multas" class="nav-link">💸 Multa</a></li>
-        </ul>
+<?php if (!$esLoginORegistro): ?>
+<div class="sidebar d-flex flex-column p-3 text-white">
+    <h4 class="text-center text-white">📚 Biblioteca</h4>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li><a href="/usuarios" class="nav-link">👤 Usuario</a></li>
+        <li><a href="/libros" class="nav-link">📖 Libro</a></li>
+        <li><a href="/prestamos" class="nav-link">🔄 Préstamo</a></li>
+        <li><a href="/multas" class="nav-link">💸 Multa</a></li>
+    </ul>
+    <div class="mt-auto">
+        <a href="/" class="nav-link text-danger">🚪 Cerrar sesión</a>
     </div>
-    <?php endif; ?>
+</div>
+<?php endif; ?>
 
-    <div class="main-content">
-        <?= $content ?? '<h1>Bienvenido al Sistema de Biblioteca</h1><p>Selecciona una opción en el menú lateral para comenzar.</p>' ?>
-    </div>
+<div class="main-content">
+    <?= $content ?? '<h1>Bienvenido al Sistema de Biblioteca</h1><p>Selecciona una opción en el menú lateral para comenzar.</p>' ?>
+</div>
 
 </body>
 
